@@ -10,7 +10,8 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: 'https://crescendo-race-client.onrender.com/',
+    // origin: 'https://crescendo-race-client.onrender.com/',
+    origin: '*',
     methods: ['GET', 'POST'],
   },
 });
